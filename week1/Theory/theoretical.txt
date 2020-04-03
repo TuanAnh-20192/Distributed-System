@@ -1,0 +1,57 @@
+Question 1: What is the role of middleware in a distributed system?
+Create an abstract level to interact with customer
+Hide detail of the operating services
+
+Question 2: Explain what is meant by (distribution) transparency, 
+and give examples of different types of transparency.
+Distribution transparency is some features are hidden from the users. 
+The end users are not aware of some mechanism under the distributed system.
+It give the idea users using distributed system as a single system.
+Types of transparency:
+- Access transparency: user accessing remote and local resource with the same
+operation.
+- Location transparency: user accessing distributed resources without knowing 
+where the resource located.
+- Concurency transparency: many users active at the same time can access same
+resoures without knowing accesses of others.
+- Replication transparency: Resource is replicated but the user just know 
+it as single
+- Failure transparency: The fault and error are hidden from user and the other
+parts of the system work normally.
+- Scaling transparency: The system is scaling without affect the application 
+working 
+
+Question 3: Why is it sometimes so hard to hide the occurrence and recovery 
+from failures in a distributed system?
+The system is distributed so monitoring the operation of a node is hard and 
+it's not easy to detect whether this node is just slow in response or stop.
+
+Question 4: Why is it not always a good idea to aim at implementing the highest 
+degree of transparency possible?
+Highest degre of transparency might lead to difficult to find a way of backup.
+For example of highest degree of location transparency, user see the system is located
+at a single place, so they can not switch to other location if the server of
+their location is down.
+
+Question 5: What is an open distributed system and what benefits does openness provide?
+An open distributed system is distributed system that easily to add, replace and integrate
+new components. The ability to expand of open distributed system allowed its sharability.
+Benefits:
+- The ability to expand horizontally and vertically with software and hardware
+- The sharability of resources because new clients could be added to the system
+- Improve performance because of managing requests from clients
+- Reliability
+
+Question 6: Describe precisely what is meant by a scalable system.
+Scalable system is the system that can be grow vertically or horizontally of both
+hardware and software without losing the performance of the application
+
+Question 7: Scalability can be achieved by applying different techniques. What are these techniques?
+- Increase number of nodes
+- Increase the size of each nodes
+- Shared nothing technique: all nodes are equal, no master node, reduce failure
+- Distributed shared memory: all nodes share the same memory
+- Distributed storage system: separating between data storage and computing services.
+- Parallel processing: divide the work to run together
+- Asynchronous communication: don't have to wait for response
+

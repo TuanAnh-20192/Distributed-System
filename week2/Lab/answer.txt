@@ -1,0 +1,23 @@
+1. What are the commands did you use?
+- docker build --tag=microservice-kubernetes-demo-apache apache
+- docker tag microservice-kubernetes-demo-apache tuananhindocker/microservice-kubernetes-demo-apache:latest
+- docker push tuananhindocker/microservice-kubernetes-demo-apache
+
+- docker build --tag=microservice-kubernetes-demo-catalog microservice-kubernetes-demo-catalog
+- docker tag microservice-kubernetes-demo-catalog tuananhindocker/microservice-kubernetes-demo-catalog:latest
+- docker push tuananhindocker/microservice-kubernetes-demo-catalog
+
+- docker build --tag=microservice-kubernetes-demo-customer microservice-kubernetes-demo-customer
+- docker tag microservice-kubernetes-demo-customer tuananhindocker/microservice-kubernetes-demo-customer:latest
+- docker push tuananhindocker/microservice-kubernetes-demo-customer 
+
+- docker build --tag=microservice-kubernetes-demo-order microservice-kubernetes-demo-order
+- docker tag microservice-kubernetes-demo-order tuananhindocker/microservice-kubernetes-demo-order:latest
+- docker push tuananhindocker/microservice-kubernetes-demo-order
+
+ 2. Open the website Docker Hub and login with your account. What’s new in your docker hub repository?
+ There are 4 new repository I just pushed
+
+3: What is the status of these created pods?
+Now, wait few minutes and re-type this command, what is the new status of these pods? 
+First, these pods has status "ContainerCreating", then it switch to "running" state

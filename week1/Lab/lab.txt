@@ -1,0 +1,23 @@
+Question  1: What  is  the  path  of  the  html  file  that  contains  the  content  of  the default website apache? 
+/var/www/html/index.html
+
+Question 2: What is the default port on which webserver is listening?
+Port 80
+
+Question 3: Explain what permission 755 means.
+read = 4, write = 2, execute = 1.
+755 mean root user can read, write, execute the file, other users only can read and execute.
+
+Question 4: What do you see after typing these 2 addresses example.com and test.com? Explain it.
+I see the html file of each addresses in the configuration. Because in the configuration file,
+the document root of address exaple.com was set to /var/www/example.com/public_html and document
+root of address test.com was set to /var/www/test.com/public_html
+
+Question 6: What is the code of the while loop?
+while(message != null && !message.isEmpty()){
+    out.println(message);
+}
+
+Question 7: What is the role of the method run? When is it called?
+Method run receive message from socket input, sort it, and print out to the socket output.
+It's called when the socket ready and a thread is start
